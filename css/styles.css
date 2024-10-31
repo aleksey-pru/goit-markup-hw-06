@@ -25,7 +25,7 @@ a {
 
 img {
     display: block;
-    margin: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -461,11 +461,15 @@ button {
 
 /* Features */
 
+.section {
+    padding: 96px 0;
+}
+
+
 .features-list {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-    padding: 96px 0;
 }
 
 .features-item {
@@ -496,6 +500,10 @@ button {
 
 @media screen and (min-width: 768px) {
 
+    .section {
+        padding: 120px 0;
+    }
+    
     .features-list {
         column-gap: 24px;
         row-gap: 72px;
@@ -512,6 +520,10 @@ button {
 
 @media screen and (min-width: 1158px) {
     
+    .section {
+        padding: 120px 0;
+    }
+
     .features-list {
         gap: 24px;
     }
@@ -531,4 +543,79 @@ button {
         height: 112px;
         background-color: #f4f4fd;
     }
+
+    .title-features {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
+
+    .features-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
 }
+
+/* team section */
+
+.team-section {
+    background-color: #f4f4fd;
+}
+
+.title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    max-width: 264px;
+    margin: 0 auto;
+}
+
+.team-cards {
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.card-description {
+    padding: 32px 0;
+}
+
+.title-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+}
+
+
+
+
+
