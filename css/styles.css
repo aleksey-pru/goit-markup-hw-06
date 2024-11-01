@@ -404,6 +404,12 @@ button {
     padding: 72px 52px;
 }
 
+@media (min-resolution: 2x) {
+    .bg-solution {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobile-2x.jpg);
+    }
+}
+
 .title-solution {
     font-weight: 700;
     font-size: 36px;
